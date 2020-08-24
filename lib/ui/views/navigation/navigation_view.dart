@@ -44,23 +44,23 @@ class NavigationView extends ViewModelBuilderWidget<NavigationViewModel> {
               items: [
                 BottomNavigationBarItem(
                   icon: Icon(Icons.home),
-                  label: 'Home',
+                  title: Text('Home'),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.search),
-                  label: 'Search',
+                  title: Text('Search'),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.queue_play_next),
-                  label: 'Coming Soon',
+                  title: Text('Coming Soon'),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.file_download),
-                  label: 'Downloads',
+                  title: Text('Downloads'),
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.menu),
-                  label: 'More',
+                  title: Text('More'),
                 ),
               ],
               selectedItemColor: Colors.white,
