@@ -9,7 +9,7 @@ class ContentHeaderModel extends BaseViewModel {
   VideoPlayerController _videoPlayerController;
   VideoPlayerController get videoPlayerController => _videoPlayerController;
 
-  bool _isMuted = false;
+  bool _isMuted = true;
   bool get isMuted => _isMuted;
 
   bool get isVideoInitialised => _videoPlayerController.value.initialized;
@@ -21,7 +21,7 @@ class ContentHeaderModel extends BaseViewModel {
     notifyListeners();
 
     Future.delayed(Duration(seconds: 2), () async {
-      await _videoPlayerController.setVolume(100);
+      await _videoPlayerController.setVolume(0);
       await _videoPlayerController.play();
       notifyListeners();
     });
