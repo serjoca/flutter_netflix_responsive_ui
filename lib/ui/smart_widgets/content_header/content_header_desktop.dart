@@ -44,7 +44,7 @@ class ContentHeaderDesktop extends ViewModelBuilderWidget<ContentHeaderModel> {
                 ? VideoPlayer(model.videoPlayerController)
                 : Image.asset(
                     featuredContent.imageUrl,
-                    fit: BoxFit.scaleDown,
+                    fit: BoxFit.cover,
                     alignment: Alignment.center,
                   ),
           ),
